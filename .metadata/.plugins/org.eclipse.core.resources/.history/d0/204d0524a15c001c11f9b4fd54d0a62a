@@ -1,0 +1,26 @@
+package com.spring.di;
+
+public class TvRemoteControl implements RemoteControl {
+
+	private String company;
+	
+
+	@Override
+	public void on() {
+		System.out.println(company + " TV의 전원을 켭니다");
+	}
+
+	@Override
+	public void off() {
+		
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+}

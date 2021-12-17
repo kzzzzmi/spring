@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="c1" class="com.spring.di.TvRemoteControl">
+		<property name="company" value="LG"></property> <!-- 변수 -->
+	</bean>
+
+	<bean id="c2" class="com.spring.di.TvRemoteControl">
+		<property name="company" value="SAMSUNG"></property>
+	</bean>
+
+	<bean id="c3" class="com.spring.di.AirConditionerRemoteControl">
+		<property name="company" value="SAMSUNG"></property>
+	</bean>
+
+	<bean id="centralControl" class="com.spring.di.CentralController">
+	</bean>
+</beans>

@@ -1,0 +1,39 @@
+java -jar jar파일명
+
+
+1. 마켓플레이스에서 프로그램 추가 설치
+ - marketplace EE 설치 (eclipse web)
+ - spring tools 3 Add-On for spring tools (레거시 spring project를 생성하기 쉬워진다)
+
+
+2. 인코딩 설정
+ - preferences -> encoding -> content types -> java class file -> utf-8
+ - content types -> java, jsp, spring -> utf-8
+ - workspace -> text file encoding -> utf-8
+ - web -> utf-8
+
+
+3. d2coding 배포 다운로드(font)
+
+
+4. mariaDB 설치
+ mariadb.org에서 다운로드
+ service name : MariaDB-spring
+ 비밀번호 : toor
+ 포트번호 : 8001
+ 검색창에 서비스 들어가면 서비스중 프로그램 볼 수 있음
+
+
+5. sourceTree
+
+
+6. 빌드툴 -> 메이븐, 그레이들
+ - 프로젝트의 라이브러리, ...., 전체적인 빌드 과정을 총괄해주는 매니저
+
+
+7. pom.xml 수정 시
+ * contentroot -> maven -> updateproject *
+
+
+8. 서버 올리기
+ - preferences -> console buffer size 0하나 더 붙이기

@@ -1,0 +1,5 @@
+package com.spring.study.dto;
+
+public class SignupReqDto {
+
+}
