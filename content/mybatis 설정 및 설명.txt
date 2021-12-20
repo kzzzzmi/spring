@@ -1,0 +1,35 @@
+mybatis 홈페이지에서 설명 나와있음
+ - JDBC 프레임워크
+ - ibatis의 진화 버전
+
+
+mvnrepository
+1. mybatis
+2. mybatis spring
+3. spring jdbc
+4. mariadb-driver
+
+
+FrameWork(틀)
+ - 프로그램을 표준화해서 사용하기 위해 만들어짐(비슷한 기법으로 쓰기위해)
+
+
+마이바티스
+1. dependency 추가
+
+2. servlet-cpmtext.xml 객체 생성
+ - dataSource 생성 -> JDBC
+ - sqlSessioFactory -> Mybatis
+ - sqlSessionTemplate -> Mybatis
+ - MapperScannnerConfigurer -> Mybatis
+
+3. src/main/resources/mappers 폴더 생성
+ - Mapper.xml 파일 생성 (UserMapper.xml, NoticeMapper.xml, BorderMapper.xml, ...)
+
+4. src/main/java/com/spring/domain/user -> Entity 객체, Repository 인터페이스, RepositoryImpl 인터페이스 구현 클래스 파일 생성
+
+
+
+controller - service - repository - db
+이렇게 상호작요함
+M V C 느낌

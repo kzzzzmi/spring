@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.spring.study.domain.user.UserRepository">
+	<select id="getUserAll" resultType="com.spring.study.domain.user.User">
+		select
+			id,
+			username,
+			password,
+			name,
+			email,
+			create_date,
+			update_date
+		from
+			user_mst;
+	</select>
+	
+	<select id="idCheck" resultType="Integer" parameterType="String">
+		SELECT
+			count(username)
+		FROM
+			user_mst
+		WHERE
+			username = #{username};
+	</select>
+	
+	<insert id="insertUser" parameterType="com.spring.study.domain.user.User"></insert>
+</mapper>

@@ -1,0 +1,8 @@
+package com.spring.study.service.auth;
+
+import com.spring.study.web.dto.SignupReqDto;
+
+public interface AuthService {
+	public boolean usernameCheck(SignupReqDto signupReqDto);
+	
+}

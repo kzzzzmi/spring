@@ -10,15 +10,17 @@
 	회원가입페이지
 
 	<form action="/study/signup" method="post">
-		아이디: <input type="text" id="username" class="signup-ip"
-			name="username" required>
-		<button type="button" id="idCheck">중복확인</button>
+		<input type="hidden" id="submit-flag" name="submitFlag" value="0">
+		아이디: <input type="text" class="signup-ip" name="username" value="${signupRespDto.username}" required> 
+		<input type="hidden" id="id-check-flag" name="idCheckFlag" value="${empty signupRespDto.idCheckFlag ? '' : signupRespDto.idCheckFlag}">
+		<button type="button" id="id-check">중복확인</button>
 		<br> 비밀번호: <input type="password" class="signup-ip"
-			name="password" required><br> 이름: <input name="name"
-			class="signup-ip" required><br> 이메일: <input type="email"
-			name="email" class="signup-ip" required><br>
-		<button>회원가입</button>
-		<br>
+			name="password" value="${signupRespDto.password}" required><br> 
+			이름: <input name="name"
+			class="signup-ip" value="${signupRespDto.name}" required><br> 
+			이메일: <input type="email"
+			name="email" class="signup-ip" value="${signupRespDto.email}" required><br>
+		<button type="button" id="signup-btn">회원가입</button>
 		<button type="reset">재작성</button>
 	</form>
 
