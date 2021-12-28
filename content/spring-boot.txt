@@ -1,0 +1,27 @@
+스프링 부트 특징
+1. 톰캣이 내장되어 있음
+2. 디펜던시(라이브러리)의 버전을 자동으로 관리해줌
+3. 스프링 시큐리티를 지원한다
+ - Oauth2 라이브러리 구글, 네이버, 카카오, 깃허브, 페이스북 등을 통해 로그인을 하기를 백엔드에서 구현 가능 !!
+
+
+클라이언트가 요청하면 서버는 응답하며 csrf라는 토큰을 같이 줌(시큐리티)
+ - csrf 토큰을 안쓰기 위해서
+ - config 패키지만듬 (SecurityConfig.java)
+
+
+REST api
+ - @RestController -> 응답이 뷰 리졸버가 아닌 데이터
+ - @Controller로 클래스를 지정하고 메서드에 @ResponseBody를 포함했을 때와 같은 리턴 방식
+ - Ajax는 RestController로 받고 JSON 데이터 형식을 받음
+ - @Controller가 있는 곳에서만 뷰 리졸버로 받을 수 있음
+
+
+validation check
+ - 빈 값이거나 정해둔 규칙에 벗어났을 경우 다른 응답을 하도록 만드는 것
+
+AOP(aspect)
+ - 관점 지향 프로그래밍
+ - client - server - DB
+ 위의 것들이 상호작용할 때 어떤 관점에서 무엇을 처리하는게 이득인지를 따지며 프로그래밍
+ ex) validation check는 굳이 db까지 갈 필요없이 클라이언트가 서버에 값을 보냈을 때 체크하거나 js에서 처리하는게 이득

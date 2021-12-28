@@ -31,4 +31,14 @@ public class PageController {
 	public String signupForm() {
 		return "auth/signup";
 	}
+	
+	@RequestMapping(value = "/signup-ajax", method = RequestMethod.GET)
+	public String signupAjax() {
+		return "auth/signupAjax";
+	}
+	
+	@RequestMapping(value = "/signin-ajax", method = RequestMethod.GET)
+	public String signinAjax() {
+		return "auth/signinAjax";
+	}
 }

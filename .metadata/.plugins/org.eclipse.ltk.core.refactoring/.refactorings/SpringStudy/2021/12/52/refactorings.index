@@ -2,3 +2,14 @@
 1639998844745	Rename package 'com.spring.study.service.user'
 1639998952837	Copy compilation unit
 1640003492371	Copy compilation unit
+1640072509234	Move compilation units
+1640146841108	Copy file
+1640149842136	Copy file
+1640150616107	Copy compilation units
+1640150678434	Rename type 'SignupReqDto'
+1640150683441	Rename type 'SignupRespDto'
+1640153362847	Rename resource 'signupAjax.jsp'
+1640153378222	Rename resource 'signup-ajax.jsp'
+1640158161434	Delete element
+1640165132624	Copy file
+1640165242309	Delete element

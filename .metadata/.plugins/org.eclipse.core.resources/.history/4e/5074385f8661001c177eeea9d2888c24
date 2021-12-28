@@ -1,6 +1,0 @@
-package com.spring.study.service.auth;
-
-public interface AuthServiceImpl {
-	public boolean usernameCheck(String username);
-	
-}

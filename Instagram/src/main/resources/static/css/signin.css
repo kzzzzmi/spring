@@ -1,0 +1,143 @@
+article {
+  margin: 32px auto 0px;
+  padding: 0px 0px 32px;
+  display: flex;
+  width: 935px;
+  justify-content: center;
+  align-items: center;
+}
+
+.si-title-img {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.si-items {
+  margin: 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 704px;
+}
+
+.si-items-ip {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  padding: 10px 0px;
+}
+
+.si-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  margin: 22px 0;
+}
+
+.si-login-form {
+  width: 350px;
+}
+
+.si-item {
+  display: flex;
+  justify-content: center;
+}
+
+.si-input {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  outline: none; /* 클릭시 검정 테두리 나오는 것 */
+  margin-bottom: 6px;
+  padding: 9px 8px 7px;
+  width: 266px;
+  height: 36px;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+
+.si-input::placeholder {
+  color: rgb(142, 142, 142);
+}
+
+.si-submit-btn {
+  border: 0;
+  border-radius: 4px;
+  width: 266px;
+  height: 30px;
+  margin: 6px 0px;
+  background-color: #0095f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hr-sect {
+  margin: 10px 42px 18px;
+  height: 15px;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #8e8e8e;
+}
+
+.hr-sect span {
+  margin: 0px 17px;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: '';
+  flex-grow: 1;
+  background-color: #dbdbdb;
+  height: 1px;
+  font-size: 0;
+  line-height: 0px;
+}
+
+.si-facebook {
+  width: 100%;
+  text-align: center;
+  margin: 8px 40px;
+  height: 20px;
+  color: rgb(56, 81, 133);
+}
+
+.si-find-password {
+  width: 266px;
+  text-align: center;
+  margin: 12px 0px 0px;
+  color: rgb(0, 55, 107);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.si-signup {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.si-signup-text {
+  margin: 15px 0px;
+}
+
+.si-signup-text a {
+  color: #0095f6;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.si-download-text {
+  margin: 10px 0;
+}
+
+.si-download-btns {
+  margin: 10px 0px;
+}

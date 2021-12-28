@@ -1,0 +1,117 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.su-items {
+  margin: 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 704px;
+}
+
+.su-items-ip {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  padding: 10px 0px;
+}
+
+.su-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  margin: 22px 0;
+}
+
+.su-login-form {
+  width: 350px;
+}
+
+.su-item {
+  display: flex;
+  justify-content: center;
+}
+
+.su-input {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  outline: none; /* 클릭시 검정 테두리 나오는 것 */
+  margin-bottom: 6px;
+  padding: 9px 8px 7px;
+  width: 266px;
+  height: 36px;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+
+.su-input::placeholder {
+  color: rgb(142, 142, 142);
+}
+
+.su-submit-btn {
+  border: 0;
+  border-radius: 4px;
+  width: 266px;
+  height: 30px;
+  margin: 6px 0px;
+  background-color: #0095f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hr-sect {
+  margin: 10px 42px 18px;
+  height: 15px;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #8e8e8e;
+}
+
+.hr-sect span {
+  margin: 0px 17px;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: '';
+  flex-grow: 1;
+  background-color: #dbdbdb;
+  height: 1px;
+  font-size: 0;
+  line-height: 0px;
+}
+
+.su-signin {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.su-signin-text {
+  margin: 15px 0px;
+}
+
+.su-signin-text a {
+  color: #0095f6;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.su-download-text {
+  margin: 10px 0;
+}
+
+.su-download-btns {
+  margin: 10px 0px;
+}

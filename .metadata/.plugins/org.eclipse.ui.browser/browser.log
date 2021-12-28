@@ -34,3 +34,12 @@
 12월 20, 2021 02:52:08.933 [15796:7680:1220/025208.931:ERROR:device_event_log_impl.cc(214)] [02:52:08.930] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 12월 20, 2021 02:52:08.936 [15796:7680:1220/025208.936:ERROR:device_event_log_impl.cc(214)] [02:52:08.935] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
 12월 20, 2021 04:08:24.157 [15796:7680:1220/040824.156:ERROR:device_event_log_impl.cc(214)] [04:08:24.156] USB: usb_service_win.cc:261 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+12월 22, 2021 13:14:33.452 NEW SESSION
+12월 22, 2021 13:14:33.452 [7260:12096:1222/131433.450:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 22, 2021 13:14:33.454 [7260:12096:1222/131433.450:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 22, 2021 13:14:33.454 [7260:12096:1222/131433.450:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 22, 2021 13:14:33.454 [7260:12096:1222/131433.452:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 22, 2021 13:14:33.454 [7260:1932:1222/131433.453:ERROR:device_event_log_impl.cc(214)] [13:14:33.453] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 22, 2021 13:14:33.460 [7260:1932:1222/131433.460:ERROR:device_event_log_impl.cc(214)] [13:14:33.460] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+12월 22, 2021 14:43:19.524 [7260:1932:1222/144319.524:ERROR:interface_endpoint_client.cc(658)] Message 1 rejected by interface blink.mojom.WidgetHost

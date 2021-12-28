@@ -9,5 +9,6 @@
 <body>
 	<a href="/study/signin">로그인</a><br>
 	<a href="/study/signup">회원가입</a><br>
+	<input type="text" value="${principal.name}">
 </body>
 </html>
