@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.springboot.instagram.domain.board.BoardRepository"> <!-- namespace는 인터페이스로 연결해줘야 매핑됨 -->
+	<insert id="insertBoard" parameterType="com.springboot.instagram.domain.board.Board">
+		INSERT INTO
+			board_mst
+		VALUES(
+			0,
+			#{board_img},
+			#{board_content},
+			#{user_id},
+			NOW(),
+			NOW()
+		);
+	</insert>
+</mapper>

@@ -7,5 +7,4 @@ import com.springboot.instagram.web.dto.auth.SignupRespDto;
 
 public interface AuthService {
 	public SignupRespDto<?> validCheck(SignupReqDto dto, BindingResult bindingResult);
-
 }

@@ -29,4 +29,14 @@ public class PageController {
 	public String accountEditForm(Model model, @AuthenticationPrincipal PrincipalDetails principalDetails) {
 		return "accounts/accounts_edit";
 	}
+	
+	@GetMapping("/accoutns/password/change") // 1. model 이용 el 표션식 데이터 전달, 2. 자바스크립트에서 ajax 이용해서 각 객체의 value 값에 넣어줌
+	public String accountPasswordForm() {
+		return "accounts/accounts_password";
+	}
+	
+	@GetMapping("/upload")
+	public String uploadForm() {
+		return "upload/upload";
+	}
 }

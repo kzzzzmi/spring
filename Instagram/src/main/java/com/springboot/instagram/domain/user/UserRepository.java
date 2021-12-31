@@ -8,4 +8,9 @@ public interface UserRepository {
 	public int insertUser(User user);
 	public User getUserByUsername(String username);
 	public UserDtl getUserDtlById(int id);
+	
+	// acccounts
+	public int updateUserById(User user);
+	public int updateUserDtlById(UserDtl userDtl);
+	public int updatePasswordById(User user);
 }

@@ -26,9 +26,9 @@
 		<main>
 			<div class="container">
 				<ul class="menu-list">
-					<li class="menu-li"><a href="#" class="menu-li-a-select">프로필
+					<li class="menu-li"><a href="/accounts/edit" class="menu-li-a-select">프로필
 							편집</a></li>
-					<li class="menu-li"><a href="#" class="menu-li-a">비밀번호 변경</a>
+					<li class="menu-li"><a href="/accoutns/password/change" class="menu-li-a">비밀번호 변경</a>
 					</li>
 				</ul>
 				<article>
@@ -51,7 +51,7 @@
 								<label for="name-ip" class="edit-lb">이름</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" id="name-ip" name="name"
+								<input type="text" id="name-ip" class="profile-ip" name="name"
 									value="${principal.user.name}" />
 							</div>
 						</div>
@@ -60,7 +60,7 @@
 								<label for="username-ip" class="edit-lb">사용자 이름</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" id="username-ip" name="username"
+								<input type="text" id="username-ip" class="profile-ip" name="username"
 									value="${principal.user.username}" />
 							</div>
 						</div>
@@ -69,7 +69,7 @@
 								<label for="website-ip" class="edit-lb">웹사이트</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" id="website-ip" name="website"
+								<input type="text" id="website-ip" class="profile-ip" name="website"
 									value="${principal.userDtl.website}" />
 							</div>
 						</div>
@@ -78,7 +78,7 @@
 								<label for="introduction-ip" class="edit-lb">소개</label>
 							</aside>
 							<div class="edit-ip">
-								<textarea id="introduction-ip" name="introduction">"${principal.userDtl.introduction}"</textarea>
+								<textarea id="introduction-ip" class="profile-ip" name="introduction">${principal.userDtl.introduction}</textarea>
 							</div>
 						</div>
 						<div class="edit-item">
@@ -86,7 +86,7 @@
 								<label for="email-ip" class="edit-lb">이메일</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" id="email-ip" name="email"
+								<input type="text" id="email-ip" name="email" class="profile-ip"
 									value="${principal.user.email}" />
 							</div>
 						</div>
@@ -95,7 +95,7 @@
 								<label for="phone-ip" class="edit-lb">전화번호</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" id="phone-ip" name="phone"
+								<input type="text" id="phone-ip" class="profile-ip" name="phone"
 									value="${principal.userDtl.phone}" />
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 								<label for="gender-ip" class="edit-lb">성별</label>
 							</aside>
 							<div class="edit-ip">
-								<input type="text" list="gender-ip" name="gender"
+								<input type="text" list="gender-ip" class="profile-ip" name="gender"
 									value="${principal.userDtl.gender}" />
 								<datalist id="gender-ip">
 									<option value="남성"></option>

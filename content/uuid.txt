@@ -1,0 +1,2 @@
+uuid(universally unique identity)
+ - 파일명을 uuid 이용해서 겹치지 않게 만들어줌
