@@ -1,6 +1,8 @@
 package com.springboot.instagram.web.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +20,11 @@ public class BoardController {
 	
 	@PostMapping("/upload")
 	public boolean uploadInsert(@AuthenticationPrincipal PrincipalDetails principalDetails, BoardReqDto boardReqDto) {
-		System.out.println(boardReqDto);
 		return boardService.insertBoard(principalDetails, boardReqDto);
+	}
+	
+	@GetMapping("/board/{boardId}")
+	public Object getBoard(@PathVariable int boardId) {
+		return boardService.getBoard(boardId);
 	}
 }

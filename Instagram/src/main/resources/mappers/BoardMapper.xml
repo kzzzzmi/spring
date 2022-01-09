@@ -16,4 +16,31 @@
 			NOW()
 		);
 	</insert>
+	
+	<select id="getProfileBoardListByUsername" parameterType="String" resultType="com.springboot.instagram.domain.board.ProfileBoard">
+		SELECT
+			bm.id,
+			bm.board_img,
+			bm.board_content,
+			bm.user_id,
+			um.username,
+			bm.update_date
+		FROM
+			board_mst bm
+			LEFT OUTER JOIN user_mst um ON(bm.user_id = um.id)
+		WHERE
+			um.username = #{username}
+		ORDER BY
+			bm.update_date desc,
+			bm.id desc;
+	</select>
+	
+	<select id="getBoardById" resultType="com.springboot.instagram.domain.board.Board" parameterType="Integer">
+		SELECT
+			*
+		FROM
+			board_mst
+		WHERE
+			id = #{board_id};
+	</select>
 </mapper>

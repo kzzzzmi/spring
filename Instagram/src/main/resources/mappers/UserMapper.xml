@@ -36,6 +36,15 @@
 		WHERE
 			username = #{username};
 	</select>
+		
+	<select id="getUserById" parameterType="Integer" resultType="com.springboot.instagram.domain.user.User">
+		SELECT
+			*
+		FROM
+			user_mst
+		WHERE
+			id = #{id};
+	</select>
 	
 	<select id="getUserDtlById" parameterType="Integer" resultType="com.springboot.instagram.domain.user.UserDtl">
 		SELECT

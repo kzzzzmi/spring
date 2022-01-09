@@ -7,6 +7,7 @@
     <title>Instagram</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
     <script
       src="https://kit.fontawesome.com/498fda3233.js"
       crossorigin="anonymous"
@@ -47,35 +48,139 @@
             </div>
             <div class="profile-info">
               <div class="profile-info-top">
-                <h1>kzzzzmi</h1>
-                <button>프로필 편집</button>
-                <i class="fas fa-cog"></i>
+                <h1 class="profile-username">kzzzzmi</h1>
+                <button type="button" class="profile-edit-btn">
+                  프로필 편집
+                </button>
+                <i id="setting-btn" class="fas fa-cog"></i>
               </div>
               <div class="profile-info-middle">
-                <div>게시물 <span>5</span></div>
-                <a href="#"
-                  ><div>팔로워 <span>301</span></div></a
-                >
-                <a href="#"
-                  ><div>팔로우 <span>348</span></div></a
-                >
+                <div class="profile-info-middle-item">
+                  게시물 <span>5</span>
+                </div>
+
+                <div class="profile-info-middle-item cursor-pointer">
+                  팔로워 <span>301</span>
+                </div>
+                <div class="profile-info-middle-item cursor-pointer">
+                  팔로우 <span>348</span>
+                </div>
               </div>
               <div class="profile-info-bottom">
-                <pre>
-                  안녕하세요.
-                  반갑습니다.
-                </pre>
+                <pre>test</pre>
               </div>
             </div>
           </header>
           <section>
-            <div><i class="fas fa-table"></i> <span>게시물</span></div>
-            <div>
-              <div class="board-item">
-                <img src="" />
-                <div>
-                  <i class="fas fa-heart"></i><span>91</span>
-                  <i class="fas fa-comments"></i><span>30</span>
+            <div class="board-menu">
+              <div class="board-menu-item">
+                <i class="fas fa-table"></i> <span>게시물</span>
+              </div>
+            </div>
+            <div class="board-container">
+              <div class="board-item-group">
+                <div class="board-item">
+                  <img src="image/signin_title.PNG" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="board-item-group">
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="board-item-group">
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="board-item">
+                  <img src="" />
+                  <div class="board-item-hover">
+                    <div class="board-item-like">
+                      <i class="fas fa-heart"></i><span>91</span>
+                    </div>
+                    <div class="board-item-comment">
+                      <i class="fas fa-comments"></i><span>30</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,5 +188,56 @@
         </div>
       </main>
     </section>
+    <div class="modal-container">
+      <div class="setting-modal">
+        <button type="button">비밀번호 변경</button>
+        <button type="button">로그아웃</button>
+        <button type="button">취소</button>
+      </div>
+    </div>
+    <div class="modal-container2">
+      <i id="close-btn" class="fas fa-times"></i>
+      <div class="board-modal-body">
+        <div class="board-modal-img">
+          <img src="image/signin_title.PNG" />
+        </div>
+        <div class="board-modal-section">
+          <div class="board-modal-profile">
+            <div class="profile-img-border">
+              <img src="/image/signin_title.PNG" alt="" />
+            </div>
+            <div class="username-lb">
+              <a href="#">
+                <h1>kzzzzmi</h1>
+              </a>
+            </div>
+          </div>
+          <div class="board-modal-contents">
+            <div class="board-modal-content">
+              <div class="profile-img-border">
+                <img src="/image/signin_title.PNG" alt="" />
+              </div>
+              <pre><div class="username-lb">
+                <a href="#"><h1>kzzzzmi</h1></a>
+                </div></pre>
+            </div>
+            <div class="board-modal-comment"></div>
+          </div>
+          <div class="board-modal-items">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="board-modal-like-info">
+            <span>aaaa님 외 55명이 좋아합니다.</span>
+          </div>
+          <div class="board-modal-comment-input">
+            <input type="text" />
+            <button type="button">게시</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/profile.js"></script>
   </body>
 </html>

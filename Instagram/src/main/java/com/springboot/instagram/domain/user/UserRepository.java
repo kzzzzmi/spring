@@ -7,6 +7,7 @@ public interface UserRepository {
 	public int checkUsernameByUsername(String username);
 	public int insertUser(User user);
 	public User getUserByUsername(String username);
+	public User getUserById(int id);
 	public UserDtl getUserDtlById(int id);
 	
 	// acccounts
