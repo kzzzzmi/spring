@@ -29,6 +29,7 @@
 					</div>
 					<div class="profile-info">
 						<div class="profile-info-top">
+							<input type="hidden" id="user-id" value="${profileRespDto.userId}">
 							<h1 class="profile-username">${profileRespDto.username}</h1>
 							<c:choose>
 								<c:when test="${empty principal.user}">

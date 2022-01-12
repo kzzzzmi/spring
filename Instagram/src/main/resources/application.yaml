@@ -22,12 +22,16 @@ spring:
     oauth2:
       client:
         registration:
-          naver:
-            client-id: ltilJvwKYH5PjmmVGaE7
-            client-secret: 21zyg4hf9y
-            scope:
+          google:
+            client-id: 707407576850-36g7cif2v0idf8o05g5nnkvtep9udrl9.apps.googleusercontent.com
+            client-secret: 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
+            scope: 
             - email
-            - name
+            - profile
+          naver:
+            client-id: OVysfgJ9MuzhE4UDIJX_
+            client-secret: cIuOO8jHnL
+            scope: name,email,mobile
             client-name: Naver
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8000/login/oauth2/code/naver
@@ -49,3 +53,6 @@ mybatis:
   
 file:
   path: C:\Learn\fileupload\
+  
+test:
+  filename: testFile.txt

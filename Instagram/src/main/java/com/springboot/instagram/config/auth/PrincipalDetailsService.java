@@ -5,7 +5,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.springboot.instagram.domain.board.BoardRepository;
 import com.springboot.instagram.domain.user.User;
 import com.springboot.instagram.domain.user.UserDtl;
 import com.springboot.instagram.domain.user.UserRepository;
@@ -16,8 +15,7 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class PrincipalDetailsService implements UserDetailsService {
 
-	private final UserRepository userRepository ;
-	private final BoardRepository boardRepository;
+	private final UserRepository userRepository;
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { // username으로 조회하고 세션에 등록하겠다

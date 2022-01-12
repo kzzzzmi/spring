@@ -6,6 +6,7 @@ const boardContainer = document.querySelector('.board-container');
 const boardTotalCount = document.querySelector('#board-total-count');
 const logoutFollowBtn = document.querySelector('.logout-follow-btn');
 var boardItem = document.querySelectorAll('.board-item');
+const loginFollowBtn = document.querySelector('.login-follow-btn');
 
 var page = 0;
 var username = usernameObj.value;
@@ -166,4 +167,8 @@ function boardItemClick() {
 			getBoard(i);
 		}
 	}
+}
+
+loginFollowBtn.onclick = () => {
+	
 }
